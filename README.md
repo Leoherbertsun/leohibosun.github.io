@@ -4,7 +4,9 @@
 
 GitHub Pages 已启用，发布源为 `master /docs`，构建和部署已成功。两边使用同一份主页文件；Sites 当前保持仅所有者可见。
 
-这是一个独立静态主页，支持中英文、深浅色模式和手机布局。姓名来自已连接 GitHub 账号；简介与随笔是可修改的初稿。尚未读取到 `selfintro.mindport.chat` 的内容，因此没有添加未经核实的学校、职务、简历或联系方式。
+这是一个独立静态主页，支持中英文、深浅色模式和手机布局。内容依据本人自我介绍站与公开项目，展示金融 × AI 的方向、复旦学习经历、UCD 交换经历，以及投研工作台、Open Invest Research Skills 和 WorthMatch。研究背景与实践经历收在可展开的介绍中。
+
+2026-10-06 已成功读取 [自我介绍来源](https://selfintro.mindport.chat)。公开主页只提炼相关学习、研究和项目资料；没有搬入原站的年龄、成绩单、交易损益、证书照片、同学信息或个人社交记录。UCD 沿用来源的简称，未推断完整校名。
 
 ## 同步与发布
 
@@ -24,7 +26,7 @@ node scripts/sync-homepage.mjs /workspace/sites/leo-home
 
 当前 GitHub 主页地址是 `https://leoherbertsun.github.io/leohibosun.github.io/`。如需最短地址 `https://leoherbertsun.github.io/`，把仓库名称改为 `Leoherbertsun.github.io`，再使用相同的 `master /docs` 发布设置。相对资源路径同时兼容根域名和项目路径；当前连接不提供仓库更名接口。
 
-参考网站已重试 HTTPS、HTTP 及加 `www` 的地址，网页读取工具仍无法获取内容。当前云环境的 HTTP 域名策略为 restricted，`selfintro.mindport.chat` 不在允许名单内；要从云环境直接读取，需要通过云环境网络配置放行该域名。修改前缀或本地网络策略文件不能授予访问权限。
+当前云环境已应用更新后的联网配置，可读取参考站；上一环境的域名限制已不适用于本次任务。
 
 本地查看：
 
