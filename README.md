@@ -1,6 +1,8 @@
 # Haibo Sun · 中英文个人主页
 
-主页：[me.hbsun.chatgpt.site](https://me.hbsun.chatgpt.site)
+主页：[GitHub Pages](https://leoherbertsun.github.io/leohibosun.github.io/) · [Sites](https://me.hbsun.chatgpt.site)
+
+GitHub Pages 已启用，发布源为 `master /docs`，构建和部署已成功。两边使用同一份主页文件；Sites 当前保持仅所有者可见。
 
 这是一个独立静态主页，支持中英文、深浅色模式和手机布局。姓名来自已连接 GitHub 账号；简介与随笔是可修改的初稿。尚未读取到 `selfintro.mindport.chat` 的内容，因此没有添加未经核实的学校、职务、简历或联系方式。
 
@@ -18,9 +20,11 @@ node scripts/sync-homepage.mjs /workspace/sites/leo-home
 
 然后分别提交 GitHub 仓库、发布 Sites。同步命令只准备内容，不会自行上传或部署。云端工作空间与 GitHub 不会实时同步；其他工作不会自动占用 GitHub 的仓库空间。
 
-GitHub Pages 需要在 [仓库 Pages 设置](https://github.com/Leoherbertsun/leohibosun.github.io/settings/pages) 中选择 **Deploy from a branch → master → /docs**。当前连接只能修改仓库代码，不能启用 Pages 或更名仓库。
+已在 [仓库 Pages 设置](https://github.com/Leoherbertsun/leohibosun.github.io/settings/pages) 中保存 **Deploy from a branch → master → /docs**。向 `master` 推送更新后，GitHub 会自动构建和发布 `docs/`。Sites 仍需单独发布相同文件。
 
-当前仓库名启用 Pages 后的地址是 `https://leoherbertsun.github.io/leohibosun.github.io/`。如需最短地址 `https://leoherbertsun.github.io/`，把仓库名称改为 `Leoherbertsun.github.io`，再使用相同的 `master /docs` 发布设置。相对资源路径同时兼容根域名和项目路径。
+当前 GitHub 主页地址是 `https://leoherbertsun.github.io/leohibosun.github.io/`。如需最短地址 `https://leoherbertsun.github.io/`，把仓库名称改为 `Leoherbertsun.github.io`，再使用相同的 `master /docs` 发布设置。相对资源路径同时兼容根域名和项目路径；当前连接不提供仓库更名接口。
+
+参考网站已重试 HTTPS、HTTP 及加 `www` 的地址，网页读取工具仍无法获取内容。当前云环境的 HTTP 域名策略为 restricted，`selfintro.mindport.chat` 不在允许名单内；要从云环境直接读取，需要通过云环境网络配置放行该域名。修改前缀或本地网络策略文件不能授予访问权限。
 
 本地查看：
 
@@ -312,4 +316,3 @@ ga_domain: huangxuan.me			# 默认的是 auto, 这里我是自定义了的域名
 ## License
 
 遵循 MIT 许可证。有关详细,请参阅 [LICENSE](https://github.com/qiubaiying/qiubaiying.github.io/blob/master/LICENSE)。
-
