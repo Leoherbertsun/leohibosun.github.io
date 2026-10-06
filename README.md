@@ -4,13 +4,13 @@
 
 GitHub Pages 已启用，发布源为 `master /docs`，构建和部署已成功。两边使用同一份主页文件；Sites 当前保持仅所有者可见。
 
-这是一个独立静态主页，支持中英文、深浅色模式和手机布局。内容依据本人自我介绍站与公开项目，展示金融 × AI 的方向、复旦学习经历、UCD 交换经历，以及投研工作台、Open Invest Research Skills 和 WorthMatch。研究背景与实践经历收在可展开的介绍中。
+这是一个独立静态主页，默认暖纸色，支持中英文、深浅色模式和手机布局。语言默认跟随访客浏览器，也可手动切换。首屏介绍金融 × AI 的方向、复旦学习经历、UCD 交换与匿名实践背景；研究部分以真实截图展开 Board、SparseLeadLag，再介绍 Open Invest Research Skills 与 WorthMatch。姓名只使用 Haibo Sun；实习机构不具名，学校与项目保留实名。
 
 2026-10-06 已成功读取 [自我介绍来源](https://selfintro.mindport.chat)。公开主页只提炼相关学习、研究和项目资料；没有搬入原站的年龄、成绩单、交易损益、证书照片、同学信息或个人社交记录。UCD 沿用来源的简称，未推断完整校名。
 
 ## 同步与发布
 
-- 主页源文件：`index.html`、`css/personal-home.css`、`js/personal-home.js`、`img/personal-home-art.png`。
+- 主页源文件：`index.html`、`css/personal-home.css`、`js/personal-home.js`，以及同步脚本列出的主页图片和标准 Phosphor 图标。
 - GitHub Pages 发布文件：`docs/`。该目录只包含新主页，不包含旧模板文章、配置或个人资料。
 - Sites 发布文件：对应 Sites 项目的 `dist/`，项目身份保存在该项目的 `.openai/hosting.json`。
 

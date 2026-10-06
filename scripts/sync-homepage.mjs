@@ -3,7 +3,12 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
-const files = ['index.html', 'css/personal-home.css', 'js/personal-home.js', 'img/personal-home-art.png'];
+const files = [
+  'index.html', 'css/personal-home.css', 'js/personal-home.js',
+  'img/personal-home-art.png', 'img/research-board.png', 'img/sparse-lead-lag.webp',
+  'img/home-icons/arrow-right.svg', 'img/home-icons/arrow-up-right.svg',
+  'img/home-icons/sun.svg', 'img/home-icons/moon.svg', 'img/home-icons/LICENSE'
+];
 const destinations = [path.join(root, 'docs')];
 const sitesRoot = process.argv[2];
 if (sitesRoot) {
