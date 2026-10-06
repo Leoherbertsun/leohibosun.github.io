@@ -2,7 +2,7 @@
   'use strict';
   const translations = {
     zh: {
-      skip: '跳到正文', navAbout: '关于', navWork: '作品', greeting: '孙海博 / FINANCE × AI',
+      skip: '跳到正文', navAbout: '关于', navWork: '作品', greeting: 'Haibo Sun / FINANCE × AI',
       heroDescription: '研究市场，也把想法做出来。', github: '在 GitHub 找到我',
       artCaption: '留一点空间，给下一个想法。', heroBottom: '金融 · 人工智能 · 研究与创作', scroll: '认识一下',
       aboutHeading: '关于', aboutLead: '用研究理解市场。<br>用代码验证想法。',
@@ -20,8 +20,8 @@
       worthmatchDescription: '关于认识与连接的产品实验，探索 AI 对话、个人档案与活动。',
       website: '网站', openSource: '开源', prototype: '原型',
       footerNote: '保持好奇，把想法做出来。', backTop: '回到顶部',
-      title: '孙海博 Haibo Sun · 个人主页', description: '孙海博 Haibo Sun 的个人主页。金融与 AI、投资研究，以及把想法做出来的实践。',
-      themeLight: '切换到浅色模式', themeDark: '切换到深色模式', brandLabel: '孙海博，回到首页', navLabel: '主导航',
+      title: 'Haibo Sun · 个人主页', description: 'Haibo Sun 的个人主页。金融与 AI、投资研究，以及把想法做出来的实践。',
+      themeLight: '切换到浅色模式', themeDark: '切换到深色模式', brandLabel: 'Haibo Sun，回到首页', navLabel: '主导航',
       imageAlt: '浅色背景上的蓝色纸环和一颗橙色小球'
     },
     en: {
@@ -52,10 +52,10 @@
   const themeToggle = document.querySelector('.theme-toggle');
   const languageToggle = document.querySelector('.language-toggle');
   let locale = 'zh';
-  let theme = 'dark';
+  let theme = 'light';
   try {
     const storedLanguage = localStorage.getItem('leo-home-language');
-    const storedTheme = localStorage.getItem('leo-home-theme');
+    const storedTheme = localStorage.getItem('haibo-home-theme-v2');
     if (storedLanguage === 'zh' || storedLanguage === 'en') locale = storedLanguage;
     if (storedTheme === 'dark' || storedTheme === 'light') theme = storedTheme;
   } catch { /* The page also works without browser storage. */ }
@@ -105,6 +105,6 @@
   });
   themeToggle.addEventListener('click', () => {
     applyTheme(theme === 'dark' ? 'light' : 'dark');
-    try { localStorage.setItem('leo-home-theme', theme); } catch {}
+    try { localStorage.setItem('haibo-home-theme-v2', theme); } catch {}
   });
 })();
