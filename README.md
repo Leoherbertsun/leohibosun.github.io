@@ -1,3 +1,36 @@
+# Haibo Sun · 中英文个人主页
+
+主页：[me.hbsun.chatgpt.site](https://me.hbsun.chatgpt.site)
+
+这是一个独立静态主页，支持中英文、深浅色模式和手机布局。姓名来自已连接 GitHub 账号；简介与随笔是可修改的初稿。尚未读取到 `selfintro.mindport.chat` 的内容，因此没有添加未经核实的学校、职务、简历或联系方式。
+
+## 同步与发布
+
+- 主页源文件：`index.html`、`css/personal-home.css`、`js/personal-home.js`、`img/personal-home-art.png`。
+- GitHub Pages 发布文件：`docs/`。该目录只包含新主页，不包含旧模板文章、配置或个人资料。
+- Sites 发布文件：对应 Sites 项目的 `dist/`，项目身份保存在该项目的 `.openai/hosting.json`。
+
+在本仓库运行以下命令，可把同一份源码同步到两个发布目录：
+
+```sh
+node scripts/sync-homepage.mjs /workspace/sites/leo-home
+```
+
+然后分别提交 GitHub 仓库、发布 Sites。同步命令只准备内容，不会自行上传或部署。云端工作空间与 GitHub 不会实时同步；其他工作不会自动占用 GitHub 的仓库空间。
+
+GitHub Pages 需要在 [仓库 Pages 设置](https://github.com/Leoherbertsun/leohibosun.github.io/settings/pages) 中选择 **Deploy from a branch → master → /docs**。当前连接只能修改仓库代码，不能启用 Pages 或更名仓库。
+
+当前仓库名启用 Pages 后的地址是 `https://leoherbertsun.github.io/leohibosun.github.io/`。如需最短地址 `https://leoherbertsun.github.io/`，把仓库名称改为 `Leoherbertsun.github.io`，再使用相同的 `master /docs` 发布设置。相对资源路径同时兼容根域名和项目路径。
+
+本地查看：
+
+```sh
+python3 -m http.server 4173 --directory docs
+```
+
+下方保留原博客主题文档，原有文章和作者资料是模板内容。
+
+---
 
 
 ![](https://raw.githubusercontent.com/qiubaiying/qiubaiying.github.io/master/img/readme-home.png)
