@@ -18,7 +18,7 @@
       skip: 'Skip to content', navAbout: 'About', navWork: 'Work', greeting: 'Hello. Glad you’re here.',
       heroDescription: 'Thoughts, work & everyday life.', github: 'Find me on GitHub',
       artCaption: 'A little room for the next idea.', heroBottom: 'A home for the things worth keeping.', scroll: 'Take a look ↓',
-      aboutHeading: 'About', aboutLead: 'Stay curious.<br>Make ideas real.',
+      aboutHeading: 'About', aboutLead: 'Stay curious. <br>Make ideas real.',
       aboutText: 'A personal space for my projects and thoughts, with room for whatever I try next.',
       noteTitle: 'A note on beginning', noteText: 'Start now. Organize as you go. This space doesn’t need to be full on day one; it can grow with new work and experiences.',
       workHeading: 'Work', projectTitle: 'Personal website', projectDescription: 'A small home for ideas, projects and notes.', projectStatus: 'In progress',
